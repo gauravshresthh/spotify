@@ -16,6 +16,9 @@ const Main = () => {
             </div>
             <div className="cardContent">
               <h4>Liked Songs</h4>
+              <span className="playIcon">
+                <i class="fas fa-play" />
+              </span>
             </div>
           </div>
         </div>

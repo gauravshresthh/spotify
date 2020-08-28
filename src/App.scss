@@ -5,7 +5,7 @@ $greyLighter: #282828;
 $greyText: #b3b3b3;
 $greyNav: #090909;
 $white: #fff;
-
+$buttonColor: #1db954;
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -116,12 +116,20 @@ $white: #fff;
 .cardsWrap {
   .card {
     background: $greyLighter;
-
-    width: 200px;
+    position: relative;
+    width: 190px;
     overflow: hidden;
-    padding: 1.3rem;
+    padding: 1.2rem 1.2rem 0.8rem;
     border-radius: 0.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      .playIcon {
+        opacity: 1;
+        cursor: pointer;
+        transition: all 0.8s ease-in-out;
+      }
+    }
     .cardImage {
       height: 150px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -136,7 +144,23 @@ $white: #fff;
       h4 {
         font-weight: 400;
         font-size: 1rem;
+        margin-bottom: 0;
       }
     }
+  }
+}
+
+.playIcon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+  background: $buttonColor;
+  margin-left: auto;
+  opacity: 0;
+
+  i {
+    margin: auto;
   }
 }
