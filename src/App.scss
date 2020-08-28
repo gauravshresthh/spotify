@@ -100,9 +100,14 @@ $buttonColor: #1db954;
   display: flex;
   align-items: center;
   padding: 0.7rem 2rem;
+  position: fixed;
+  top: 0;
 }
 .main {
+  overflow-y: scroll;
   width: 100%;
+  position: relative;
+  padding-top: 2rem;
 
   .mainContent {
     color: $white;
@@ -114,6 +119,7 @@ $buttonColor: #1db954;
 }
 
 .cardsWrap {
+  padding-bottom: 0.8rem;
   .card {
     background: $greyLighter;
     position: relative;
