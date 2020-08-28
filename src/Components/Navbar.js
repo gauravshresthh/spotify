@@ -12,9 +12,18 @@ const Navbar = () => {
       </div>
 
       <ul>
-        <li className="active">Home</li>
-        <li>Search</li>
-        <li>Your Library</li>
+        <li className="active">
+          <i class="fa fa-home" />
+          Home
+        </li>
+        <li>
+          <i class="fa fa-search" />
+          Search
+        </li>
+        <li>
+          <i class="fas fa-layer-group" />
+          Your Library
+        </li>
       </ul>
       <div className="cookies">
         <span>Cookies</span>
