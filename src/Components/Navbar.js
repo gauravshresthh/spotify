@@ -12,19 +12,19 @@ const Navbar = () => {
       </div>
 
       <ul>
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Link to="/" className="links">
           <li className="active">
             <i className="fa fa-home" />
             Home
           </li>
         </Link>
-        <Link to="/search" style={{ textDecoration: 'none' }}>
+        <Link to="/search" className="links">
           <li>
             <i className="fa fa-search" />
             Search
           </li>
         </Link>
-        <Link to="/library" style={{ textDecoration: 'none' }}>
+        <Link to="/library" className="links">
           <li>
             <i className="fas fa-layer-group" />
             Your Library

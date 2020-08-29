@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Playlists = (props) => {
   const dataPlaylists = [
@@ -74,18 +75,20 @@ const Playlists = (props) => {
   return (
     <div className="cardsWrapInner">
       {matchedPlaylists.map((playlist, id) => (
-        <div className="card" key={id}>
-          <div className="cardImage">
-            <img src={playlist.img} alt="Pic 1" />
+        <Link to={`/playlist/` + playlist.id} className="links">
+          <div className="card" key={id}>
+            <div className="cardImage">
+              <img src={playlist.img} alt="Pic 1" />
+            </div>
+            <div className="cardContent">
+              <h3>{playlist.name}</h3>
+              <span>{playlist.desc}</span>
+              <span className="playIcon">
+                <i className="fas fa-play" />
+              </span>
+            </div>
           </div>
-          <div className="cardContent">
-            <h3>{playlist.name}</h3>
-            <span>{playlist.desc}</span>
-            <span className="playIcon">
-              <i className="fas fa-play" />
-            </span>
-          </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
