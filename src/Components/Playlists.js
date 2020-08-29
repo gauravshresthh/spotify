@@ -73,8 +73,8 @@ const Playlists = (props) => {
 
   return (
     <div className="cardsWrapInner">
-      {matchedPlaylists.map((playlist) => (
-        <div className="card">
+      {matchedPlaylists.map((playlist, id) => (
+        <div className="card" key={id}>
           <div className="cardImage">
             <img src={playlist.img} alt="Pic 1" />
           </div>
@@ -82,7 +82,7 @@ const Playlists = (props) => {
             <h3>{playlist.name}</h3>
             <span>{playlist.desc}</span>
             <span className="playIcon">
-              <i class="fas fa-play" />
+              <i className="fas fa-play" />
             </span>
           </div>
         </div>

@@ -13,15 +13,15 @@ const Navbar = () => {
 
       <ul>
         <li className="active">
-          <i class="fa fa-home" />
+          <i className="fa fa-home" />
           Home
         </li>
         <li>
-          <i class="fa fa-search" />
+          <i className="fa fa-search" />
           Search
         </li>
         <li>
-          <i class="fas fa-layer-group" />
+          <i className="fas fa-layer-group" />
           Your Library
         </li>
       </ul>
