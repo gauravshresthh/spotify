@@ -134,6 +134,9 @@ $buttonColor: #1db954;
   .cardsWrapInner {
     display: flex;
     flex-direction: row;
+    span {
+      text-transform: capitalize;
+    }
   }
   .subTitle {
     margin-top: 0.5rem;
