@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 const PlaylistPage = () => {
   let { id } = useParams();
   return (
-    <div>
+    <div className="playListPage">
       <div className="playInfo">
         <div className="playListImg">
           <img
@@ -13,7 +13,7 @@ const PlaylistPage = () => {
           />
         </div>
         <h1>Title</h1>
-        <span>Spotify</span>
+        <span>Spotify</span> <br />
         <button>Play</button>
         <div className="icons">
           <div className="iconsHeart"></div>
@@ -25,7 +25,7 @@ const PlaylistPage = () => {
       </div>
       <div className="playListSongs">
         <ul>
-          <li>Song 1</li>
+          <li>Song {id}</li>
           <li>Song 2</li>
           <li>Song 3</li>
           <li>Song 4</li>
