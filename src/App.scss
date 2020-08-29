@@ -38,6 +38,7 @@ $buttonColor: #1db954;
   color: $white;
   position: relative;
   z-index: 2;
+  border-top: 1px solid $greyDark;
 }
 
 .navBar {
@@ -60,12 +61,14 @@ $buttonColor: #1db954;
   }
   ul {
     margin: 0;
-    // padding: 0 0 0 30px;
+
     i {
       margin-right: 0.7rem;
     }
     .active {
       background: $greyLighter;
+      color: $white;
+      fill: $white;
     }
     li {
       color: $greyText;
@@ -93,7 +96,7 @@ $buttonColor: #1db954;
 }
 
 .mainNav {
-  background: $greyNav;
+  background: rgba(9, 9, 9, 0.78);
   color: $white;
   height: 56px;
   width: 100%;
@@ -102,16 +105,18 @@ $buttonColor: #1db954;
   padding: 0.7rem 2rem;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 .main {
   overflow-y: scroll;
   width: 100%;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 3.4rem;
 
   .mainContent {
     color: $white;
     padding: 2rem;
+    h1,
     h2 {
       margin-bottom: 1rem;
     }
@@ -119,13 +124,29 @@ $buttonColor: #1db954;
 }
 
 .cardsWrap {
+  span {
+    text-transform: uppercase;
+  }
   padding-bottom: 0.8rem;
+  h2 {
+    margin-bottom: 0;
+  }
+  .cardsWrapInner {
+    display: flex;
+    flex-direction: row;
+  }
+  .subTitle {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
   .card {
     background: $greyLighter;
     position: relative;
     width: 190px;
+    height: 290px;
+    margin-right: 1.2rem;
     overflow: hidden;
-    padding: 1.2rem 1.2rem 0.8rem;
+    padding: 1.2rem;
     border-radius: 0.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 
@@ -146,11 +167,18 @@ $buttonColor: #1db954;
       }
     }
     .cardContent {
-      padding: 0.7rem 0;
-      h4 {
+      padding: 0.4rem 0;
+      i {
+        color: $white;
+      }
+      h3 {
         font-weight: 400;
         font-size: 1rem;
         margin-bottom: 0;
+      }
+      span {
+        font-size: 0.8rem;
+        color: $greyText;
       }
     }
   }
@@ -165,8 +193,18 @@ $buttonColor: #1db954;
   background: $buttonColor;
   margin-left: auto;
   opacity: 0;
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.2rem;
 
   i {
     margin: auto;
   }
+}
+
+.subTitle {
+  font-size: 0.9rem;
+  color: $greyText;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
